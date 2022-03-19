@@ -1,0 +1,112 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.medsos{
+    padding: 5px;
+    background-color: #01F3A9;
+}
+
+.medsos ul li{
+    display: inline-block;
+    color: #ffff;
+}
+
+.container{
+    width: 80%;
+    margin:0 auto ; /*atas bawah 0, kanan kiri auto*/
+}
+
+.container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header h1{
+    padding:15px 0;
+    float: left;
+    color: #01F3A9;
+}
+
+header ul{
+    float: right;
+}
+
+header ul li{
+    display: inline-block;
+}
+
+header ul li a{
+    padding: 25px 20px;
+    display: inline-block;
+}
+
+.active{
+    background-color: #01F3A9;
+    color: #ffff;
+}
+
+section{
+    padding: 30px 0;
+}
+
+.gambar {
+    width: 100%; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+.gambar .foto img{width: 250px; height: 250px;}
+
+.foto {border:1px black; margin:10px; text-align: center;}
+
+.foto a:hover {
+	background-color: green;
+	color: #fff;
+}
+
+.foto a{border:1px solid green; padding:10px; color: white; background: #00C403;  text-decoration: none; border-radius: 20px; cursor: pointer;}
+
+.foto {border: 1px solid #00C1B3; margin:10px;}
+
+.foto p {
+	color:#FF7476;
+}
+
+.foto h2 {
+	color:#505050 ;
+}
+
+.gmbr{
+    padding: 30px;
+    float: left;
+    width: 33,3%;
+}
+
+.gmbr img{
+    width: 300px;
+    height: 300px;
+}
+
+.isinya{
+    width: 70%;
+    float: right;
+    text-align: justify;
+    padding-top: 100px;
+    padding-right: 70px;
+}
+
+@media only screen and(max-width: 768px){
+    [class*="col-"]{
+        width: 100%;
+    }
+}
